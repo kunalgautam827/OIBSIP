@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(145deg, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+.form-container {
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(15px);
+    padding: 35px 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    width: 340px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 15px;
+    transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+input:focus {
+    outline: none;
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+#password-toggle-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ccc;
+    font-size: 1.1rem;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background: #ff5e62;
+    background: linear-gradient(45deg, #ff5e62, #ff9966);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff9966, #ff5e62);
+    transform: translateY(-2px);
+}
+
+#toggle-link {
+    color: #ffd700;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#toggle-link:hover {
+    text-decoration: underline;
+}
+
+#feedback-message {
+    margin-top: 15px;
+    min-height: 22px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#dashboard h2 {
+    margin-bottom: 15px;
+}
